@@ -1,0 +1,118 @@
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.alerta {
+  position: absolute;
+  top: 50px;
+  background-color: rgb(245, 124, 124);
+  color: red;
+  height: 50px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.login {
+  height: 350px;
+  width: 400px;
+  background-color: rgb(241, 148, 25);
+  border-radius: 60px;
+  color: #fff;
+}
+
+.imagen {
+  width: 350px;
+  margin: 15px auto 0 auto;
+}
+
+.login__contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.login__contenedor h1 {
+  margin: 0 0 20px 0;
+}
+
+.login__contenedor form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+input {
+  height: 40px;
+  width: 250px;
+  padding: 12px 10px;
+  color: #1455cec2;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+.input-group input:focus {
+  border: 2px #1455ce solid;
+}
+
+.input-group input::placeholder {
+  color: #1455ce;
+}
+
+.input-group:nth-child(2) {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-group .mostrar {
+  position: absolute;
+  right: 10px;
+  color: #000;
+  cursor: pointer;
+}
+
+.login .btn__login {
+  height: 45px;
+  width: 180px;
+  background-color: #1455ce;
+  border: none;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Tablet 
+
+@media screen and (min-width: 768px) and (max-width: 1023px){} */
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+  body {
+    flex-direction: column;
+  }
+  
+  .login {
+    width: 320px;
+  }
+  
+  .imagen {
+    width: 280px;
+  }
+}

@@ -1,0 +1,256 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario__titulo {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #123412;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+/* Estilos para los inputs */
+
+form {
+  width: 1200px;
+  display: flex;
+  background-color: #ff891aee;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+form:nth-child(1) {
+  display: block;
+}
+
+.lado-1 {
+  width: 25%;
+  padding: 10px;
+}
+
+.lado-2 {
+  width: 75%;
+  padding: 10px;
+}
+
+.lado-3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 12px 0;
+}
+
+label {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+input, textarea{
+  border: 2px #1455ce solid;  
+  outline: none;
+  height: 40px;
+  padding: 10px;
+  border-radius: 14px;
+  font-size: 16px;
+}
+
+#imagen {
+  border: none;
+}
+
+#txtID {
+  width: 50px;
+  text-align: center;
+}
+
+#contenido {
+  height: 520px;
+  resize: none;
+  overflow-y: scroll;
+}
+
+#contenido::-webkit-scrollbar {
+  display: none;
+}
+
+#resumen {
+  height: 120px;
+  resize: none;
+}
+
+/* Botones */
+
+.editar__botones {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 20px;
+  padding-right: 30px;
+  height: 40px;
+}
+
+.btn-editar {
+  width: 120px;
+  height: 100%;
+  background-color: #1455ce;
+  color: #fff;
+  font-size: 18px;
+  padding: 0;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-editar:hover {
+  background-color: #487cdb;
+}
+
+.btn-cancelar {
+  width: 120px;
+  height: 100%;
+  background-color: red;
+  color: #fff;
+  font-size: 18px;
+  padding: 0;
+  font-weight: 700;
+  border-radius: 14px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-cancelar:hover {
+  background-color: rgb(114, 0, 0);
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Estilos para los inputs */
+  
+  form {
+    width: 730px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+  }
+  
+  .lado-1 {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .lado-2 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .lado-3 {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  input, textarea{
+    height: 45px;
+  }
+
+  .lado-1 .input-group {
+    align-items: center;
+  }
+
+  .input-group img {
+    height: 300px;
+    width: 500px;
+  }
+
+  #contenido {
+    height: 420px;
+  }
+  
+  #resumen {
+    height: 180px;
+  }
+  
+  /* Botones */
+  
+  .editar__botones {
+    justify-content: center;
+    padding-right: 0;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Estilos para los inputs */
+  
+  form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+  }
+  
+  .lado-1 {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .lado-2 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .lado-3 {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  input, textarea{
+    height: 45px;
+  }
+
+  #contenido {
+    height: 420px;
+  }
+  
+  #resumen {
+    height: 180px;
+  }
+  
+  /* Botones */
+  
+  .editar__botones {
+    justify-content: center;
+    padding-right: 0;
+  }
+}
